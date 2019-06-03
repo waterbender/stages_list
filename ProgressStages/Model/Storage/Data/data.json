@@ -1,0 +1,109 @@
+Colors: 
+ 1. #C42D63
+ 2. #872A5F
+ 3. #55275A
+ 
+
+Example 1:
+{
+	"steps": [
+			{
+				"step": 1,
+				"title": "Get Costs, Coverage & Savings",
+				"subtitle": "Your insurance denied your coverage",
+				"status": "inProgress"
+			},
+			{
+				"step": 2,
+				"title": "Schedule Specialty Pharmacy Delivery",
+				"subtitle": "Schedule Delivery for your medicine",
+				"status": "pending"
+			},
+			{
+				"step": 3,
+				"title": "Prepare for First Dose",
+				"subtitle": "Learn how to schedule your med reminders, Learn how to schedule your med reminders",
+				"status": "pending"
+			}
+	]
+
+}
+
+
+Example 2:
+{
+	"steps": [
+			{
+				"step": 1,
+				"title": "Get Costs, Coverage & Savings",
+				"subtitle": "Your insurance denied your coverage",
+				"status": "completed"
+			},
+			{
+				"step": 2,
+				"title": "Schedule Specialty Pharmacy Delivery",
+				"subtitle": "Schedule Delivery for your medicine",
+				"status": "inProgress"
+			},
+			{
+				"step": 3,
+				"title": "Prepare for First Dose",
+				"subtitle": "Learn how to schedule your med reminders, Learn how to schedule your med reminders",
+				"status": "pending"
+			}
+	]
+
+}
+
+
+Example 3:
+{
+	"steps": [
+			{
+				"step": 1,
+				"title": "Get Costs, Coverage & Savings",
+				"subtitle": "Your insurance denied your coverage",
+				"status": "completed"
+			},
+			{
+				"step": 2,
+				"title": "Schedule Specialty Pharmacy Delivery",
+				"subtitle": "Schedule Delivery for your medicine",
+				"status": "completed"
+			},
+			{
+				"step": 3,
+				"title": "Prepare for First Dose",
+				"subtitle": "Learn how to schedule your med reminders, Learn how to schedule your med reminders",
+				"status": "inProgress"
+			}
+	]
+
+}
+
+
+
+Example 4:
+{
+	"steps": [
+			{
+				"step": 1,
+				"title": "Get Costs, Coverage & Savings",
+				"subtitle": "Your insurance denied your coverage",
+				"status": "completed"
+			},
+			{
+				"step": 3,
+				"title": "Prepare for First Dose",
+				"subtitle": "Learn how to schedule your med reminders, Learn how to schedule your med reminders",
+				"status": "inProgress"
+			},
+			{
+				"step": 2,
+				"title": "Schedule Specialty Pharmacy Delivery",
+				"subtitle": "Schedule Delivery for your medicine",
+				"status": "completed"
+			}
+	]
+
+}

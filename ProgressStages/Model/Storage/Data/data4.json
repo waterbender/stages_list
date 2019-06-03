@@ -1,0 +1,22 @@
+{
+	"steps": [
+			{
+				"step": 1,
+				"title": "Get Costs, Coverage & Savings",
+				"subtitle": "Your insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverageYour insurance denied your coverage",
+				"status": "completed"
+			},
+			{
+				"step": 3,
+				"title": "Prepare for First Dose",
+				"subtitle": "Learn how to schedule your med reminders, Learn how to schedule your med reminders",
+				"status": "inProgress"
+			},
+			{
+				"step": 2,
+				"title": "Schedule Specialty Pharmacy Delivery",
+				"subtitle": "Schedule Delivery for your medicine",
+				"status": "completed"
+			}
+	]
+}

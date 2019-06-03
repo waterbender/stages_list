@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stages View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StagesViewController" customModule="ProgressStages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XZr-OV-eOV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleCellIdentifier" rowHeight="92" id="X11-8o-YxN" customClass="TitleCell" customModule="ProgressStages" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X11-8o-YxN" id="Uek-HC-Qi5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know where you stand so we can guide you through the process" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnn-x5-rck">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="92"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="92" id="yT5-LQ-Vns"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wnn-x5-rck" firstAttribute="leading" secondItem="Uek-HC-Qi5" secondAttribute="leading" constant="20" id="7V3-dF-MY3"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wnn-x5-rck" secondAttribute="bottom" id="EPG-Vx-qs7"/>
+                                                <constraint firstItem="Wnn-x5-rck" firstAttribute="top" secondItem="Uek-HC-Qi5" secondAttribute="top" id="XQm-Jf-BFD"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wnn-x5-rck" secondAttribute="trailing" constant="20" id="oiE-eW-dKI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cellTitle" destination="Wnn-x5-rck" id="tab-WT-7uk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCellIdentifier" rowHeight="162" id="x6g-Js-5nH" customClass="StageCell" customModule="ProgressStages" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="162"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x6g-Js-5nH" id="LrL-gm-obO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="7wd-Sk-DjY" customClass="StageReadyIconView" customModule="ProgressStages" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="26" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="TqL-e1-4V8"/>
+                                                        <constraint firstAttribute="height" constant="30" id="xF0-GJ-aV4"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="872A5F"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="complitedImage" value="icon-completed"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isComplited" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="basicNumber">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-RE-W47" customClass="BorderedView" customModule="ProgressStages" customModuleProvider="target">
+                                                    <rect key="frame" x="58" y="11" width="336" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title stage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQ6-u6-TAc">
+                                                            <rect key="frame" x="15" y="15" width="306" height="29"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text stage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9N-HT-ooe">
+                                                            <rect key="frame" x="15" y="59" width="306" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubc-Re-tK0">
+                                                            <rect key="frame" x="290" y="12" width="30" height="34"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CW-br-qf5">
+                                                            <rect key="frame" x="306" y="22" width="15" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="15" id="UFq-e4-Lrx"/>
+                                                                <constraint firstAttribute="height" constant="15" id="mNr-4B-zla"/>
+                                                            </constraints>
+                                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" image="16049"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FQ6-u6-TAc" firstAttribute="leading" secondItem="GYT-RE-W47" secondAttribute="leading" constant="15" id="2VS-4h-eyd"/>
+                                                        <constraint firstItem="p9N-HT-ooe" firstAttribute="leading" secondItem="GYT-RE-W47" secondAttribute="leading" constant="15" id="4Qq-Q7-jYd"/>
+                                                        <constraint firstItem="7CW-br-qf5" firstAttribute="centerY" secondItem="FQ6-u6-TAc" secondAttribute="centerY" id="I58-gU-TKW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FQ6-u6-TAc" secondAttribute="trailing" constant="15" id="KSB-Qx-dof"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p9N-HT-ooe" secondAttribute="bottom" constant="15" id="RlX-2M-zUb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7CW-br-qf5" secondAttribute="trailing" constant="15" id="dNh-ha-9Rj"/>
+                                                        <constraint firstItem="FQ6-u6-TAc" firstAttribute="top" secondItem="GYT-RE-W47" secondAttribute="top" constant="15" id="hH7-Py-I0C"/>
+                                                        <constraint firstAttribute="trailing" secondItem="p9N-HT-ooe" secondAttribute="trailing" constant="15" id="rTA-9M-eUZ"/>
+                                                        <constraint firstItem="p9N-HT-ooe" firstAttribute="top" secondItem="FQ6-u6-TAc" secondAttribute="bottom" constant="15" id="rmF-Ep-tTh"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-ie-5Cq">
+                                                    <rect key="frame" x="192" y="66" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7wd-Sk-DjY" firstAttribute="leading" secondItem="LrL-gm-obO" secondAttribute="leadingMargin" id="IW6-83-coa"/>
+                                                <constraint firstItem="GYT-RE-W47" firstAttribute="bottom" secondItem="LrL-gm-obO" secondAttribute="bottomMargin" id="JNn-lE-5Ec"/>
+                                                <constraint firstItem="7wd-Sk-DjY" firstAttribute="top" secondItem="LrL-gm-obO" secondAttribute="topMargin" constant="15" id="QVz-7A-HXa"/>
+                                                <constraint firstItem="GYT-RE-W47" firstAttribute="leading" secondItem="7wd-Sk-DjY" secondAttribute="trailing" constant="8" id="jpu-E4-GRU"/>
+                                                <constraint firstItem="GYT-RE-W47" firstAttribute="trailing" secondItem="LrL-gm-obO" secondAttribute="trailingMargin" id="ywI-dt-KZm"/>
+                                                <constraint firstItem="GYT-RE-W47" firstAttribute="top" secondItem="LrL-gm-obO" secondAttribute="topMargin" id="zJb-4j-Bb7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cellDescription" destination="p9N-HT-ooe" id="VGw-D6-VvK"/>
+                                            <outlet property="cellTitle" destination="FQ6-u6-TAc" id="BCd-HA-h5j"/>
+                                            <outlet property="readyFlagView" destination="7wd-Sk-DjY" id="WMx-GF-ucU"/>
+                                            <outlet property="stageDisc" destination="7CW-br-qf5" id="bQK-Kp-iEO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ohT-hB-5d4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PIP-04-zUH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XZr-OV-eOV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cFq-JC-8Hw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XZr-OV-eOV" secondAttribute="bottom" id="jbW-3p-HX3"/>
+                            <constraint firstItem="XZr-OV-eOV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ooU-BM-CD4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZr-OV-eOV" secondAttribute="trailing" id="wLu-i0-HND"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="XZr-OV-eOV" id="vmL-1i-3yG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="16049" width="256" height="256"/>
+        <image name="icon-completed" width="24" height="24"/>
+        <namedColor name="872A5F">
+            <color red="0.52941176470588236" green="0.16470588235294117" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
