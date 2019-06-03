@@ -28,6 +28,8 @@
 		756BF1DC22A521F00068D50B /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BF1DB22A521F00068D50B /* TitleCell.swift */; };
 		756FC7E822A587AE0055FD7D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FC7E722A587AE0055FD7D /* ProgressView.swift */; };
 		75C5D23D22A5D5E2005A979E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C5D23C22A5D5E2005A979E /* .swiftlint.yml */; };
+		75C5D24022A5D994005A979E /* Screen Shot 2019-06-03 at 9.27.02 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C5D23F22A5D994005A979E /* Screen Shot 2019-06-03 at 9.27.02 PM.png */; };
+		75C5D24222A5D998005A979E /* Screen Shot 2019-06-04 at 1.19.38 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C5D24122A5D998005A979E /* Screen Shot 2019-06-04 at 1.19.38 AM.png */; };
 		B65F3F5970887696AC4C4D02 /* Pods_ProgressStagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A874D44C3D7FA7CE591394D2 /* Pods_ProgressStagesTests.framework */; };
 		D5371843E52BEB7603E11D7F /* Pods_ProgressStages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FC9D5E027C6C2CFEC2BAB6 /* Pods_ProgressStages.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		756BF1DB22A521F00068D50B /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		756FC7E722A587AE0055FD7D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		75C5D23C22A5D5E2005A979E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		75C5D23F22A5D994005A979E /* Screen Shot 2019-06-03 at 9.27.02 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-06-03 at 9.27.02 PM.png"; sourceTree = "<group>"; };
+		75C5D24122A5D998005A979E /* Screen Shot 2019-06-04 at 1.19.38 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-06-04 at 1.19.38 AM.png"; sourceTree = "<group>"; };
 		8898946CD919FDF059722CCA /* Pods-ProgressStagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressStagesTests.release.xcconfig"; path = "Target Support Files/Pods-ProgressStagesTests/Pods-ProgressStagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A874D44C3D7FA7CE591394D2 /* Pods_ProgressStagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressStagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE20D3A82E585D3D82FAA8DA /* Pods-ProgressStagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressStagesTests.debug.xcconfig"; path = "Target Support Files/Pods-ProgressStagesTests/Pods-ProgressStagesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 		756BF1BB22A50F810068D50B /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				75C5D23E22A5D969005A979E /* Screens */,
 				756BF1BE22A50F810068D50B /* Data */,
 			);
 			path = Storage;
@@ -224,6 +229,15 @@
 				756BF1C622A50F810068D50B /* StagesViewController.swift */,
 			);
 			path = StagesViewController;
+			sourceTree = "<group>";
+		};
+		75C5D23E22A5D969005A979E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				75C5D23F22A5D994005A979E /* Screen Shot 2019-06-03 at 9.27.02 PM.png */,
+				75C5D24122A5D998005A979E /* Screen Shot 2019-06-04 at 1.19.38 AM.png */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		91BA5EA237E1D0F65A6CCA0A /* Pods */ = {
@@ -323,6 +337,7 @@
 			files = (
 				75C5D23D22A5D5E2005A979E /* .swiftlint.yml in Resources */,
 				756BF1CE22A50F810068D50B /* data2.json in Resources */,
+				75C5D24022A5D994005A979E /* Screen Shot 2019-06-03 at 9.27.02 PM.png in Resources */,
 				756BF1CD22A50F810068D50B /* data4.json in Resources */,
 				756BF1A122A50F530068D50B /* LaunchScreen.storyboard in Resources */,
 				756BF1CF22A50F810068D50B /* data3.json in Resources */,
@@ -330,6 +345,7 @@
 				756BF1C922A50F810068D50B /* Colors.xcassets in Resources */,
 				756BF19C22A50F530068D50B /* Main.storyboard in Resources */,
 				756BF1CA22A50F810068D50B /* Assets.xcassets in Resources */,
+				75C5D24222A5D998005A979E /* Screen Shot 2019-06-04 at 1.19.38 AM.png in Resources */,
 				756BF1CB22A50F810068D50B /* data1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
